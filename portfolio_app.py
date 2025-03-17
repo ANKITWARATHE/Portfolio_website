@@ -7,16 +7,16 @@ st.set_page_config(page_title="Ankit Warathe - Portfolio", page_icon="📊", lay
 st.title("Ankit Warathe")
 st.subheader("Data Scientist | Machine Learning | Deep Learning")
 
+
 # Navigation Sidebar
 st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to", ["About", "Skills", "Projects", "Experience", "Contact"])
+page = st.sidebar.radio("Go to", ["About", "Skills", "Projects", "Experience", "Certificates", "Contact"])
 
 # About Section
 if page == "About":
     st.header("About Me")
     st.write("""
-    Data Scientist with expertise in machine learning, deep learning, and data analytics. 
-    Passionate about solving real-world problems using AI and data-driven insights.
+    Data Scientist with expertise in machine learning, deep learning, and data analytics. Skilled in Python, SQL, Power BI, and Tableau, with experience in computer vision, Natural Language Processing (NLP), and predictive modeling. Certified in Python for Data Science and Data Visualization, with a proven ability to optimize workflows and drive data-driven decision-making. Passionate about solving real-world problems through Artificial Intelligence (AI) and analytics.
     """)
 
 # Skills Section
@@ -48,10 +48,29 @@ elif page == "Projects":
 elif page == "Experience":
     st.header("Experience")
     st.subheader("Data Science Intern - AISPRY (10/2024 - 11/2024)")
-    st.write("Developed a computer vision model achieving mAP of 0.808.")
+    st.write("●	Developed a computer vision model for switchgear cabinet part identification with a mean Average Precision (mAP) of 0.808, significantly reducing manual efforts.")
+    st.write("● Created an interactive Streamlit-based web application for real-time component identification, improving operational efficiency.") 
+    st.write("● Improved operational efficiency by reducing manual labeling efforts, saving time, and enhancing data quality.") 
+
+    st.write("\n")
     
     st.subheader("Cataloging Executive - Iksula Services (10/2023 - 09/2024)")
-    st.write("Designed data cataloging frameworks and improved data workflows.")
+    st.write("●	Designed and implemented efficient data cataloging frameworks to streamline data discoverability and usability.")
+    st.write("●	Conducted annotation tasks to label datasets accurately, ensuring high-quality data for machine learning and computer vision models.")
+    st.write("●	Collaborated with cross-functional teams to improve data workflows.")
+
+
+# Certificate
+elif page == "Certificates":
+    st.header("Certificates")
+    st.write("1. Python for Data Science Certification by IIT Madras- 2023")
+    st.write("2. Basic SQL Course by 360DigiTMG - 2023")
+    st.write("3. Data Visualization using Power BI by 360DigiTMG - 2023")
+    st.write("4. Data Visualization Using Tableau by 360DigiTMG - 2024")
+    st.write("5. Python Fundamentals by NASSCOM - 2024")
+    st.write("6. Certificate Course on Data Science by NASSCOM – 2025")
+
+
 
 # Contact Section
 elif page == "Contact":
