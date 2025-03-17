@@ -54,7 +54,7 @@ elif page == "Experience":
 
     st.write("\n")
     
-    st.subheader("Cataloging Executive - Iksula Services (10/2023 - 09/2024)")
+    st.subheader("Cataloging Executive - Iksula Services Pvt. Ltd. (10/2023 - 09/2024)")
     st.write("●	Designed and implemented efficient data cataloging frameworks to streamline data discoverability and usability.")
     st.write("●	Conducted annotation tasks to label datasets accurately, ensuring high-quality data for machine learning and computer vision models.")
     st.write("●	Collaborated with cross-functional teams to improve data workflows.")
