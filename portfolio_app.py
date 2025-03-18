@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Set page title and icon
-st.set_page_config(page_title="Ankit Warathe - Portfolio", page_icon="📊", layout="wide")
+st.set_page_config(page_title = "Ankit Warathe - Portfolio", page_icon = "📊", layout = "centered")
 
 # Header
 st.title("Ankit Warathe")
