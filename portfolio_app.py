@@ -62,13 +62,26 @@ elif page == "Experience":
 
 # Certificate
 elif page == "Certificates":
-    st.header("Certificates")
-    st.write("1. Python for Data Science Certification by IIT Madras- 2023")
-    st.write("2. Basic SQL Course by 360DigiTMG - 2023")
-    st.write("3. Data Visualization using Power BI by 360DigiTMG - 2023")
-    st.write("4. Data Visualization Using Tableau by 360DigiTMG - 2024")
-    st.write("5. Python Fundamentals by NASSCOM - 2024")
-    st.write("6. Certificate Course on Data Science by NASSCOM – 2025")
+    st.subheader("Certificates")
+
+    #st.write("1. Python for Data Science Certification by IIT Madras- 2023")
+    #st.write("2. Basic SQL Course by 360DigiTMG - 2023")
+    #st.write("3. Data Visualization using Power BI by 360DigiTMG - 2023")
+    #st.write("4. Data Visualization Using Tableau by 360DigiTMG - 2024")
+    #st.write("5. Python Fundamentals by NASSCOM - 2024")
+    #st.write("6. Certificate Course on Data Science by NASSCOM – 2025")
+
+    certificates = {
+        "1. Python for Data Science Certification by IIT Madras - 2023": "https://drive.google.com/file/d/10plOW818jiVsbxy5RLYkP-r3Q5Ld87kg/view?usp=drive_link",
+        "2. Basic SQL Course by 360DigiTMG - 2023": "https://drive.google.com/file/d/1bSFMWlgeNGiCy1OxobX85R9wfxCesarr/view?usp=drive_link",
+        "3. Data Visualization using Power BI by 360DigiTMG - 2023": "https://drive.google.com/file/d/1N0ttszh8PuX2ym__MCcjC2RHV4O_yUyS/view?usp=drive_link",
+        "4. Data Visualization Using Tableau by 360DigiTMG - 2024": "https://drive.google.com/file/d/18jJ1UaleHA2tyOaV126aaCcL2f17UzNK/view?usp=drive_link",
+        "5. Python Fundamentals by NASSCOM - 2024": "https://drive.google.com/file/d/1eESIfD7_Um2HVZaX9U5jAFqHPpiT7-QH/view?usp=drive_link",
+        "6. Certificate Course on Data Science by NASSCOM – 2025": "https://drive.google.com/file/d/1_5oq2t9BBLGR1h9ZW6aMxu2uZbg5Q33h/view?usp=drive_link"
+    }
+    
+    for cert, pdf_url in certificates.items():
+        st.write(f"**{cert}** [📥 Download]({pdf_url})", unsafe_allow_html=True)
 
 
 
@@ -78,3 +91,4 @@ elif page == "Contact":
     st.write("📧 Email: ankitwarathe@gmail.com")
     st.write("🔗 [LinkedIn](https://www.linkedin.com/in/ankit-warathe-161345b3/)")
     st.write("🐙 [GitHub](https://github.com/ANKITWARATHE)")
+    
